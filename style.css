@@ -1,0 +1,54 @@
+.border-container {
+    border: 2px solid #333 !important;
+    padding: 10px;
+}
+
+.bg-green {
+    background-color: lightgreen !important;
+}
+
+.red-text {
+    color: red !important;
+}
+
+.highlight {
+    background-color: yellow !important;
+}
+
+.task-section {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+.task-title {
+    color: #333 !important;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+#container p {
+    color: #333;
+    margin: 5px 0;
+}
+
+.item {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    color: #333;
+}
+
+.item.active {
+    font-weight: bold;
+}
+
+#total-price {
+    color: #333;
+    margin-top: 1rem;
+}

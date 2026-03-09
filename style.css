@@ -1,6 +1,96 @@
-.border-container {
-    border: 2px solid #333 !important;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    color: #333;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4a6fa5;
+}
+
+.task-section {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.task-title {
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #4a6fa5;
+    padding-bottom: 0.5rem;
+}
+
+#task1-container {
+    color: #333;
+}
+
+#task1-container h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#user-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+
+#user-list li {
+    color: #333;
+    padding: 5px 0;
+}
+
+#task1-container button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#task1-container button:hover {
+    background-color: #6b8cae;
+}
+
+#container {
+    padding: 15px;
+}
+
+#container p {
+    color: #333;
+    margin: 10px 0;
     padding: 10px;
+}
+
+.item {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    color: #333;
+}
+
+.item.active {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: yellow !important;
 }
 
 .bg-green {
@@ -11,44 +101,14 @@
     color: red !important;
 }
 
-.highlight {
-    background-color: yellow !important;
-}
-
-.task-section {
-    background: white;
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    color: #333;
-}
-
-.task-title {
-    color: #333 !important;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 0.5rem;
-}
-
-#container p {
-    color: #333;
-    margin: 5px 0;
-}
-
-.item {
+.border-container {
+    border: 2px solid #333 !important;
     padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    cursor: pointer;
-    color: #333;
 }
 
-.item.active {
-    font-weight: bold;
-}
-
-#total-price {
-    color: #333;
+.total-display {
     margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
 }

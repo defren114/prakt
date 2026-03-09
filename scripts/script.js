@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const task1Container = document.getElementById('task1-container');
+    
     const h1 = document.createElement('h1');
     h1.textContent = 'Список пользователей';
-    h1.classList.add('title', 'is-4');
     task1Container.appendChild(h1);
 
     const ul = document.createElement('ul');
     ul.id = 'user-list';
+    
     const users = ['Анна', 'Борис', 'Виктор'];
     users.forEach(function(name) {
         const li = document.createElement('li');
@@ -17,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const btn = document.createElement('button');
     btn.textContent = 'Добавить пользователя';
-    btn.classList.add('button', 'is-primary');
     task1Container.appendChild(btn);
 
     btn.addEventListener('click', function() {

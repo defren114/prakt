@@ -3,121 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практика 11 | МастерОк</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Практическое занятие 11</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .task-section {
-            background: white;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .task-title {
-            color: #333 !important;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 0.5rem;
-        }
-        .border-container {
-            border: 2px solid #333 !important;
-            padding: 10px;
-        }
-        .bg-green {
-            background-color: lightgreen !important;
-        }
-        .red-text {
-            color: red !important;
-        }
-        .highlight {
-            background-color: yellow !important;
-        }
-        .item {
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ddd;
-            cursor: pointer;
-        }
-        .item.active {
-            font-weight: bold;
-        }
-        #task1-container, #task2-container, #task3-container {
-            color: #333;
-        }
-        #user-list {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 1rem;
-        }
-        #user-list li {
-            color: #333;
-        }
-    </style>
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <span class="icon-text">
-                        <span class="icon">
-                            <i class="fas fa-tools"></i>
-                        </span>
-                        <span class="brand-text">МастерОк</span>
-                    </span>
-                </a>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="index.html">Главная</a>
-                    <a class="navbar-item" href="contacts.html">Контакты</a>
-                    <a class="navbar-item" href="practice11.html" style="color: var(--primary-color); font-weight: 500;">Практика 11</a>
-                </div>
+    <h1 class="main-title">Практическое занятие 11: Манипуляции с DOM</h1>
+
+    <div class="task-section">
+        <h2 class="task-title">Задание №1: Генерация списка</h2>
+        <div id="task1-container"></div>
+    </div>
+
+    <div class="task-section">
+        <h2 class="task-title">Задание №2: Работа с селекторами</h2>
+        <div id="task2-container">
+            <div id="container">
+                <p class="text">Первый параграф</p>
+                <p class="text special">Второй параграф</p>
+                <p class="text">Третий параграф</p>
+                <p class="text">Четвёртый параграф</p>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <section class="section">
-        <div class="container">
-            <h1 class="title has-text-centered">Практическое занятие 11</h1>
-            
-            <div class="task-section">
-                <h2 class="title is-3 task-title">Задание №1: Генерация списка</h2>
-                <div id="task1-container"></div>
-            </div>
-
-            <div class="task-section">
-                <h2 class="title is-3 task-title">Задание №2: Работа с селекторами</h2>
-                <div id="task2-container">
-                    <div id="container">
-                        <p class="text">Первый параграф</p>
-                        <p class="text special">Второй параграф</p>
-                        <p class="text">Третий параграф</p>
-                        <p class="text">Четвёртый параграф</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="task-section">
-                <h2 class="title is-3 task-title">Задание №3: Data-атрибуты и вычисления</h2>
-                <div id="task3-container">
-                    <div class="item" data-price="100">Товар 1</div>
-                    <div class="item active" data-price="200">Товар 2</div>
-                    <div class="item" data-price="150">Товар 3</div>
-                    <div id="total-price" class="mt-4 has-text-weight-bold"></div>
-                </div>
-            </div>
+    <div class="task-section">
+        <h2 class="task-title">Задание №3: Data-атрибуты и вычисления</h2>
+        <div id="task3-container">
+            <div class="item" data-price="100">Товар 1</div>
+            <div class="item active" data-price="200">Товар 2</div>
+            <div class="item" data-price="150">Товар 3</div>
+            <div id="total-price" class="total-display"></div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>Учебный проект по фронтенд-разработке</p>
-        </div>
-    </footer>
-
-    <script src="scripts/practice11.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
